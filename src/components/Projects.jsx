@@ -17,9 +17,8 @@ const styles = {
   },
 };
 
-const Projects = (props) => {
-  const theme = useContext(ThemeContext);
-  const { header } = props;
+const Projects = ({ header }) => {
+  const { bsSecondaryVariant } = useContext(ThemeContext);
   const [data, setData] = useState(null);
   const [showMore, setShowMore] = useState(false);
 
@@ -31,7 +30,9 @@ const Projects = (props) => {
       .then((res) => setData(res))
       .catch((err) => err);
   }, []);
+
   const numberOfItems = showMore && data ? data.length : 6;
+
   return (
     <>
       <Header title={header} />
@@ -51,7 +52,7 @@ const Projects = (props) => {
                 && (
                 <Button
                   style={styles.showMoreStyle}
-                  variant={theme.bsSecondaryVariant}
+                  variant={bsSecondaryVariant}
                   onClick={() => setShowMore(true)}
                 >
                   show more

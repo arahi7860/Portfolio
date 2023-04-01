@@ -33,21 +33,20 @@ const styles = {
   },
 };
 
-const ProjectCard = (props) => {
-  const theme = useContext(ThemeContext);
+const ProjectCard = ({ project }) => {
+  const { cardBackground, cardBorderColor, bsSecondaryVariant } = useContext(ThemeContext);
+  const { bsPrimaryVariant, cardFooterBackground } = useContext(ThemeContext);
   const parseBodyText = (text) => <ReactMarkdown children={text} />;
-
-  const { project } = props;
 
   return (
     <Col>
       <Card
         style={{
           ...styles.cardStyle,
-          backgroundColor: theme.cardBackground,
-          borderColor: theme.cardBorderColor,
+          backgroundColor: cardBackground,
+          borderColor: cardBorderColor,
         }}
-        text={theme.bsSecondaryVariant}
+        text={bsSecondaryVariant}
       >
         <Card.Img variant="top" src={project?.image} />
         <Card.Body>
@@ -58,25 +57,25 @@ const ProjectCard = (props) => {
         </Card.Body>
 
         <Card.Body>
-          {project?.links?.map((link) => (
+          {project?.links?.map(({ href, text }) => (
             <Button
-              key={link.href}
+              key={href}
               style={styles.buttonStyle}
-              variant={'outline-' + theme.bsSecondaryVariant}
-              onClick={() => window.open(link.href, '_blank')}
+              variant={'outline-' + bsSecondaryVariant}
+              onClick={() => window.open(href, '_blank')}
             >
-              {link.text}
+              {text}
             </Button>
           ))}
         </Card.Body>
         {project.tags && (
-          <Card.Footer style={{ backgroundColor: theme.cardFooterBackground }}>
+          <Card.Footer style={{ backgroundColor: cardFooterBackground }}>
             {project.tags.map((tag) => (
               <Badge
                 key={tag}
                 pill
-                bg={theme.bsSecondaryVariant}
-                text={theme.bsPrimaryVariant}
+                bg={bsSecondaryVariant}
+                text={bsPrimaryVariant}
                 style={styles.badgeStyle}
               >
                 {tag}

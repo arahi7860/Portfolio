@@ -15,6 +15,7 @@ function Education(props) {
   const [data, setData] = useState(null);
   const [width, setWidth] = useState('50vw');
   const [mode, setMode] = useState('VERTICAL_ALTERNATING');
+  const { accentColor, chronoTheme } = theme;
 
   useEffect(() => {
     fetch(endpoints.education, {
@@ -24,19 +25,12 @@ function Education(props) {
       .then((res) => setData(res))
       .catch((err) => err);
 
-    if (window?.innerWidth < 576) {
-      setMode('VERTICAL');
-    }
+    if (window?.innerWidth < 576) setMode('VERTICAL');
 
-    if (window?.innerWidth < 576) {
-      setWidth('90vw');
-    } else if (window?.innerWidth >= 576 && window?.innerWidth < 768) {
-      setWidth('90vw');
-    } else if (window?.innerWidth >= 768 && window?.innerWidth < 1024) {
-      setWidth('75vw');
-    } else {
-      setWidth('50vw');
-    }
+    if (window?.innerWidth < 576) setWidth('90vw');
+    else if (window?.innerWidth >= 576 && window?.innerWidth < 768) setWidth('90vw');
+    else if (window?.innerWidth >= 768 && window?.innerWidth < 1024) setWidth('75vw');
+    else setWidth('50vw');
   }, []);
 
   return (
@@ -54,27 +48,31 @@ function Education(props) {
                 cardHeight={250}
                 mode={mode}
                 theme={{
-                  primary: theme.accentColor,
-                  secondary: theme.accentColor,
-                  cardBgColor: theme.chronoTheme.cardBgColor,
-                  cardForeColor: theme.chronoTheme.cardForeColor,
-                  titleColor: theme.chronoTheme.titleColor,
+                  primary: accentColor,
+                  secondary: accentColor,
+                  cardBgColor: chronoTheme.cardBgColor,
+                  cardForeColor: chronoTheme.cardForeColor,
+                  titleColor: chronoTheme.titleColor,
                 }}
               >
                 <div className="chrono-icons">
-                  {data.education.map((education) => (education.icon ? (
-                    <img
-                      key={education.icon.src}
-                      src={education.icon.src}
-                      alt={education.icon.alt}
-                    />
-                  ) : null))}
+                  {data.education.map((education) => (
+                    education.icon ? (
+                      <img
+                        key={education.icon.src}
+                        src={education.icon.src}
+                        alt={education.icon.alt}
+                      />
+                    ) : null
+                  ))}
                 </div>
               </Chrono>
             </Container>
           </div>
         </Fade>
-      ) : <FallbackSpinner /> }
+      ) : (
+        <FallbackSpinner />
+      )}
     </>
   );
 }
