@@ -1,33 +1,27 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
+            "title": "Software Engineer Fellow",
+            "subtitle": "General Assembly",
             "workType": "Full-time",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Completed a three-month, in-person software engineering immersive program.",
+                "Gained experience with front-end technologies such as HTML, CSS, SASS, JavaScript, TypeScript, and jQuery.",
+                "Gained experience with back-end technologies such as PostgreSQL, MongoDB, Python, Django, Express, NodeJS, and ReactJS."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "01/2023 – 04/2023"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
+            "title": "Data Analyst Associate",
+            "subtitle": "Really Far LLC ",
             "workType": "Internship",
             "workDescription": [
-                "Worked on abc."
+                "Achieved 30% more revenue with database analysis and lead scoring system entry/management from Microsoft Excel and utilizing data for business decisions.",
+                "Interpreted 80% of data and analyzed results using statistical techniques and providing ongoing budget reports for each month from Microsoft Excel",
+                "Established data chart presentations and code variables from 90% of the original raw data, executing statistical analysis to provide summaries of each analysis",
+                "Performed database updates, calculations, and rankings to determine the highest number of streams for each song."
             ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
-            "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
-            ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "07/2021 – 01/2023"
         }
     ]
 }
