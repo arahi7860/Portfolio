@@ -30,7 +30,7 @@ function Social() {
         <SocialIcon
           key={social.network}
           style={styles.iconStyle}
-          url={social.href}
+          url={social.network === 'email' ? `mailto:${social.url}` : social.url}
           network={social.network}
           bgColor={socialIconBgColor}
           target="_blank"

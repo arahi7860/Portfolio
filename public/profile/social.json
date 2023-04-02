@@ -10,7 +10,7 @@
         },
         {
             "network" : "email",
-            "href": "arahi@fordham.edu"
-        }
+            "url": "arahi@fordham.edu"
+        }        
     ]
 }
