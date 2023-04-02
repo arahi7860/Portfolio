@@ -43,7 +43,7 @@
         {
             "image" : "images/projects/weather.jpeg",
             "title": "Weather App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+            "bodyText": "- A React App that gives the weather of where you are based on zip code.\n - Gives the temperature and what type of weather there is.\n",
             "links": [
                 {
                     "text": "GitHub",
@@ -55,10 +55,9 @@
                 }
             ],
             "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
+                "React",
+                "HTML5",
+                "CSS"
             ]
         },
         {
