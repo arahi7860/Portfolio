@@ -28,6 +28,14 @@
                 {
                     "icon": "images/skills/mongo-db.png",
                     "title": "MongoDB"
+                },
+                {
+                    "icon": "images/skills/Postgresql_elephant.svg.png",
+                    "title": "PostgreSQL"
+                },
+                {
+                    "icon": "images/skills/rust-gray.png",
+                    "title": "Rust"
                 }
         ]},
         {
@@ -44,6 +52,10 @@
                 {
                     "icon": "images/skills/nodejs.png",
                     "title": "Nodejs"
+                },
+                {
+                    "icon": "/images/skills/bootstrap-5.png",
+                    "title": "Bootstrap"
                 }
             ]
         },
