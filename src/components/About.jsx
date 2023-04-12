@@ -6,11 +6,11 @@ import Fade from 'react-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import '../css/about.css';
 
 const styles = {
   introTextContainer: {
     margin: 10,
-    flexDirection: 'column',
     whiteSpace: 'pre-wrap',
     textAlign: 'left',
     fontSize: '1.2em',
@@ -21,6 +21,21 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
+    height: '50vh',
+  },
+  // Media queries for smaller screens
+  '@media (max-width: 576px)': {
+    introTextContainer: {
+      fontSize: '1em',
+      margin: '10px 0',
+    },
+    introImageContainer: {
+      margin: '0 auto',
+      height: '30vh',
+    },
+  },
+  sectionContentContainer: {
+    paddingTop: '5rem',
   },
 };
 

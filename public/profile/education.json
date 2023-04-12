@@ -1,19 +1,19 @@
 {
-    "education":[
-        {
-            "title": "Aug 2018 - May 2022",
-            "cardTitle": "Bachelor of Science, Applied Mathematics",
-            "cardSubtitle":"Fordham University, Bronx",
-            "cardDetailedText": "GPA - 3.0",
-            "icon" : {
-                "src": "images/skills/fordhamlogo.png"
-            }
-        },
-        {
-            "title": "June 2018",
-            "cardTitle": "High School",
-            "cardSubtitle":"Bronx High School of Science, Bronx",
-            "cardDetailedText": "GPA - 3.4"
-        }
-    ]
+  "education": [
+    {
+      "title": "Aug 2018 - May 2022",
+      "cardTitle": "Bachelor of Science, Applied Mathematics",
+      "cardSubtitle": "Fordham University, Bronx",
+      "cardDetailedText": "GPA - 3.0",
+      "icon": {
+        "src": "images/skills/fordhamlogo.png"
+      }
+    },
+    {
+      "title": "June 2018",
+      "cardTitle": "High School",
+      "cardSubtitle": "Bronx High School of Science, Bronx",
+      "cardDetailedText": "GPA - 3.4"
+    }
+  ]
 }
