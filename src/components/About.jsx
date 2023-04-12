@@ -17,13 +17,18 @@ const styles = {
     fontWeight: 500,
   },
   introImageContainer: {
-    margin: 10,
+    margin: '10px auto 0',
     justifyContent: 'center',
     alignItems: 'center',
     display: 'flex',
     height: '50vh',
+    order: 2, /* moves the column to the bottom */
   },
-  // Media queries for smaller screens
+  introImage: {
+    maxWidth: '100%',
+    height: 'auto',
+  },
+  /* Media queries for smaller screens */
   '@media (max-width: 576px)': {
     introTextContainer: {
       fontSize: '1em',
@@ -32,6 +37,11 @@ const styles = {
     introImageContainer: {
       margin: '0 auto',
       height: '30vh',
+      order: 1, /* moves the column to the top */
+    },
+    introImage: {
+      maxWidth: '100%',
+      height: 'auto',
     },
   },
   sectionContentContainer: {
@@ -66,12 +76,16 @@ function About(props) {
           {data
             ? (
               <Fade>
-                <Row>
-                  <Col style={styles.introTextContainer}>
+                <Row style={{ flexDirection: 'column' }}>
+                  <Col style={{ ...styles.introTextContainer, width: '100%', textIndent: '20px' }}>
                     {parseIntro(data.about)}
                   </Col>
                   <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
+                    <img
+                      src={data?.imageSource}
+                      alt="profile"
+                      style={{ maxWidth: '100%' }}
+                    />
                   </Col>
                 </Row>
               </Fade>
