@@ -43,7 +43,7 @@
         {
             "image" : "images/projects/YourSpace.png",
             "title": "YourSpace",
-            "bodyText": "- A Full-Stack web application using **React** and **Tailwind CSS** for the front end and **Python**, **Postgres**, and **Django** for the back end.\n - The project must include authentication functionality and utilize **React** Router for client-side routing. \n -  Used Beekeeper Studio for the database and deployed the front-end on **Vercel** and the back-end on **Heroku**.",
+            "bodyText": "- A Full-Stack web application using **React** and **Tailwind CSS** for the front end and **Python**, **Postgres**, and **Django** for the back end.\n - The project must include authentication functionality and utilize **React** Router for client-side routing. \n - Used Beekeeper Studio for the database and deployed the front-end on **Vercel** and the back-end on **Heroku**.",
             "links": [
                 {
                     "text": "GitHub",
@@ -59,7 +59,6 @@
                 "Python",
                 "Postgres",
                 "Django",
-                "MongoDB Atlas",
                 "Vercel",
                 "Heroku",
                 "Tailwind CSS",
