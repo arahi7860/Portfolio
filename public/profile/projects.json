@@ -67,23 +67,21 @@
             ]
         },
         {
-            "image" : "images/projects/weather.jpeg",
-            "title": "Weather App",
-            "bodyText": "- A React App that gives the weather of where you are based on zip code.\n - Gives the temperature and what type of weather there is.\n",
+            "title": "FrankenStory",
+            "bodyText": "- Utilized the MERN stack (**MongoDB**, **Express.js**, **React**, and **Node.js**) to build a full-stack web application.\n - Used **React** for the front-end to create a dynamic user interface that is both responsive and interactive.\n - Designed a scalable and flexible **MongoDB** database to store user data, with Mongoose as the Object Data Modeling (ODM) library to interact with the database\n - Created a RESTful API with Express.js to handle requests and responses between the front-end and the MongoDB database",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://weather-app-arahi7860.vercel.app/"
+                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
                 }
             ],
             "tags" : [
-                "React",
-                "HTML5",
-                "CSS"
+                "Kotlin",
+                "Android",
+                "MVVM",
+                "Paging 3",
+                "Coroutines",
+                "Flow"
             ]
         },
         {
@@ -102,21 +100,23 @@
             ]
         },
         {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
+            "image" : "images/projects/weather.jpeg",
+            "title": "Weather App",
+            "bodyText": "- A React App that gives the weather of where you are based on zip code.\n - Gives the temperature and what type of weather there is.\n",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
+                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://weather-app-arahi7860.vercel.app/"
                 }
             ],
             "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
+                "React",
+                "HTML5",
+                "CSS"
             ]
         }
     ]
